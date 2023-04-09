@@ -28,6 +28,16 @@ export const scrollAnimation = (position,target,isMobile,onUpdate) =>{
             immediateRender:false
         }
     })
+    .to('.jumbotron-section',{
+       opacity:0,
+        scrollTrigger:{
+            trigger:".sound-section",
+            start:"top bottom",
+            end:"end end",
+            scrub:2,
+            immediateRender:false
+        }
+    })
     .to('.sound-section-content',{
         opacity:1,
         scrollTrigger:{

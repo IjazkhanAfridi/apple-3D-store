@@ -63,7 +63,7 @@ const WebgiViewer = forwardRef((props,ref)=>{
         });
 
         setViewerRef(viewer)
-        const isMobileOrTablet = mobileAndTabletCheck()
+        const isMobileOrTablet = mobileAndTabletCheck();
         setIsMobile(isMobileOrTablet)
 
         const manager = await viewer.addPlugin(AssetManagerPlugin)
@@ -95,7 +95,7 @@ const WebgiViewer = forwardRef((props,ref)=>{
         if(isMobileOrTablet){
             position.set(-16.7,1.17,11.7);
             target.set(0,1.37,0)
-            props.contentRef.current.className="mobile-or-tablet"
+            props.contentRef.current.className="mobile-or-tablet";
         }
 
         let needsUpdate = true;
